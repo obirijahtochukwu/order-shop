@@ -195,7 +195,7 @@
 
 // Most Popular Compoment's styles.
 .MostPopularCompoment {
-  margin: #{scaleX(24)} 0;
+  margin: #{scaleX(24)} 0 #{scaleX(100)} 0;
   div {
     div {
       .title {
