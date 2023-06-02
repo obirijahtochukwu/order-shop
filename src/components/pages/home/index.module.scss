@@ -1,0 +1,367 @@
+@import "../../../styles/theme.scss";
+
+// Header Compoment's styles.
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: #{scaleX(68)} 0 0;
+}
+
+.userImg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: #{scaleX(48)};
+  height: #{scaleX(48)};
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: #{scaleX(16)};
+}
+
+.title {
+  font-family: "Urbanist";
+  font-weight: 500;
+  font-size: #{scaleX(16)};
+  line-height: #{scaleX(22)};
+  letter-spacing: #{scaleX(0.2)};
+  color: var(--dark);
+}
+
+.text {
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: #{scaleX(20)};
+  line-height: #{scaleX(24)};
+  letter-spacing: #{scaleX(0.2)};
+  color: var(--black);
+}
+
+.img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: #{scaleX(28)};
+  height: #{scaleX(28)};
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px #{scaleX(20)};
+  margin: #{scaleX(24)} 0;
+  gap: #{scaleX(12)};
+  width: #{scaleX(380)};
+  height: #{scaleX(56)};
+  background: var(--gray);
+  border-radius: #{scaleX(12)};
+
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+
+    // TEXT DESIGN
+    font-family: "Urbanist";
+    font-weight: 400;
+    font-size: #{scaleX(14)};
+    line-height: #{scaleX(20)};
+    letter-spacing: #{scaleX(0.2)};
+    color: var(--grey);
+  }
+}
+
+.searchImg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: #{scaleX(20)};
+  height: #{scaleX(20)};
+}
+
+.filterImg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: #{scaleX(18)};
+  height: #{scaleX(18)};
+}
+
+// Specilal Offer Compoment's styles.
+.SpecilalOfferCompoment {
+  div {
+    div {
+      .title {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(22)};
+        line-height: #{scaleX(24)};
+        color: var(--black);
+      }
+
+      .txt {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(16)};
+        line-height: #{scaleX(22)};
+        color: var(--black);
+      }
+    }
+
+    section {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: #{scaleX(380)};
+      height: #{scaleX(181)};
+      margin: #{scaleX(24)} 0 0 0;
+      background: #e7e7e7;
+      box-shadow: 0px #{scaleX(4)} #{scaleX(60)} rgba(4, 6, 15, 0.05);
+      border-radius: #{scaleX(32)};
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: #{scaleX(12)};
+        div:nth-child(1) {
+          font-family: "Urbanist";
+          font-weight: 700;
+          font-size: #{scaleX(40)};
+          line-height: #{scaleX(48)};
+          color: var(--black);
+        }
+        div:nth-child(2) {
+          font-family: "Urbanist";
+          font-weight: 700;
+          font-size: #{scaleX(18)};
+          line-height: #{scaleX(22)};
+          color: var(--black);
+        }
+        div:nth-child(3) {
+          font-family: "Urbanist";
+          font-weight: 500;
+          font-size: #{scaleX(12)};
+          line-height: #{scaleX(14)};
+          color: var(--black);
+          line-height: #{scaleX(14)};
+          width: #{scaleX(140)};
+        }
+      }
+
+      .img {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: #{scaleX(200)};
+        height: #{scaleX(181)};
+      }
+    }
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0 #{scaleX(41)};
+
+      .img {
+        background-position: center;
+        background-size: #{scaleX(26)};
+        background-repeat: no-repeat !important;
+        width: #{scaleX(60)};
+        height: #{scaleX(60)};
+        background-color: rgba(16, 16, 16, 0.08);
+        border-radius: 100%;
+        margin: #{scaleX(24)} auto 0 auto;
+      }
+
+      .txt {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(16)};
+        line-height: #{scaleX(22)};
+        color: var(--black);
+        text-align: center;
+        letter-spacing: #{scaleX(0.2)};
+        margin: #{scaleX(12)} 0 0 0;
+      }
+    }
+  }
+}
+
+// Most Popular Compoment's styles.
+.MostPopularCompoment {
+  margin: #{scaleX(24)} 0;
+  div {
+    div {
+      .title {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(22)};
+        line-height: #{scaleX(24)};
+        color: var(--black);
+      }
+
+      .txt {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(16)};
+        line-height: #{scaleX(22)};
+        color: var(--black);
+      }
+    }
+  }
+
+  article {
+    display: flex;
+    gap: #{scaleX(12)};
+    margin: #{scaleX(24)} 0;
+    overflow: scroll;
+    .btn {
+      padding: #{scaleX(8)} #{scaleX(20)};
+      border: #{scaleX(2)} solid var(--black);
+      border-radius: #{scaleX(100)};
+      width: fit-content;
+
+      font-family: "Urbanist";
+      font-weight: 600;
+      font-size: #{scaleX(16)};
+      line-height: #{scaleX(22)};
+      color: var(--black);
+      letter-spacing: #{scaleX(0.2)};
+    }
+  }
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: #{scaleX(24)} #{scaleX(16)};
+
+    article {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: #{scaleX(12)};
+
+      .cardImg {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: #{scaleX(182)};
+        height: #{scaleX(182)};
+        padding: #{scaleX(16)};
+        background-color: var(--transparent);
+        border-radius: #{scaleX(24)};
+
+        .heartIcon {
+          margin: 0 0 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: #{scaleX(28)};
+          height: #{scaleX(28)};
+          background-color: var(--black);
+          border-radius: #{scaleX(50)};
+          font-size: #{scaleX(15)};
+          color: var(--white);
+        }
+      }
+
+      .title {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(18)};
+        line-height: #{scaleX(22)};
+        color: var(--black);
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: #{scaleX(8)};
+
+        .icon {
+          font-size: #{scaleX(15)};
+        }
+
+        .ratings {
+          font-family: "Urbanist";
+          font-weight: 500;
+          font-size: #{scaleX(14)};
+          line-height: #{scaleX(22)};
+          color: var(--black);
+          letter-spacing: #{scaleX(0.2)};
+        }
+
+        div:nth-child(3) {
+          background-color: var(--transparent);
+          width: #{scaleX(4)};
+          height: #{scaleX(20)};
+          border-radius: #{scaleX(22)};
+        }
+
+        .sold {
+          padding: #{scaleX(6)} #{scaleX(10)};
+          background: var(--transparent);
+          border-radius: #{scaleX(6)};
+          width: fit-content;
+
+          font-family: "Urbanist";
+          font-weight: 600;
+          font-size: #{scaleX(10)};
+          line-height: #{scaleX(12)};
+          color: var(--black);
+          letter-spacing: #{scaleX(0.2)};
+        }
+      }
+      .price {
+        font-family: "Urbanist";
+        font-weight: 700;
+        font-size: #{scaleX(18)};
+        line-height: #{scaleX(22)};
+        color: var(--black);
+        letter-spacing: #{scaleX(0.2)};
+      }
+    }
+  }
+}
+
+// Footer Compoment's styles.
+.FooterCompoment {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  // z-index: 88;
+  width: 100%;
+  height: #{scaleX(90)};
+  display: flex;
+  background-color: var(--white);
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 #{scaleX(100)} #{scaleX(1)} rgb(0, 0, 0, 0.1);
+
+  div {
+    width: #{scaleX(58)};
+    color: var(--grey);
+
+    .icon {
+      font-size: #{scaleX(20)};
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .name {
+      font-family: "Urbanist";
+      font-weight: 500;
+      font-size: #{scaleX(10)};
+      line-height: #{scaleX(12)};
+      letter-spacing: #{scaleX(0.2)};
+      text-align: center;
+    }
+  }
+}

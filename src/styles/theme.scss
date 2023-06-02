@@ -1,0 +1,16 @@
+:root {
+  --v: #000;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #f5f5f5;
+  --dark: #757575;
+  --grey: #bdbdbd;
+  --transparent: #f3f3f3;
+}
+
+@function scaleX($value, $ideal: 428, $current: 100vw) {
+  @return calc(#{$value} * (#{$current} / #{$ideal}));
+}
+@function scaleY($value, $ideal: 1810, $current: 100vh) {
+  @return calc(#{$value} * (#{$current} / #{$ideal}));
+}
