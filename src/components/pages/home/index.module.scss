@@ -332,11 +332,11 @@
 
 // Footer Compoment's styles.
 .FooterCompoment {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
-  // z-index: 88;
+  z-index: 2;
   width: 100%;
   height: #{scaleX(90)};
   display: flex;
